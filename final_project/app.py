@@ -9,9 +9,9 @@ from sqlalchemy.ext.automap import automap_base
 from flask import Flask, jsonify, render_template
 
 # Neena added code
-from flask_pymongo import pymongo
-from bson.json_util import dumps
-from flask_cors import CORS, cross_origin
+# from flask_pymongo import pymongo
+# from bson.json_util import dumps
+# from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
