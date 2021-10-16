@@ -1,3 +1,3 @@
-from final-project.app import db
+from final_project.app import db
 
 db.create_all()
