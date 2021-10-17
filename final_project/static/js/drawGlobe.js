@@ -15,8 +15,8 @@ function drawGlobe(data) {
 	    colorscale: [
 		    // [0, 'rgb(0, 0, 139)'],
 		    // [1, 'rgb(144, 238, 144)']
-			[0, 'rgb(150, 128, 194)'],
-		    [1, 'rgb(227, 18, 105)']
+			[0, 'rgb(163, 227, 178)'],
+		    [1, 'rgb(5, 26, 107)']
 	    ],
 	    marker: {
 		    line: {
@@ -53,16 +53,16 @@ function drawGlobe(data) {
     	titlefont:{
     		family:"'Barlow Condensed' , 'sans-serif'",
 	    	size:'20',
-	    	color:"#fff",
+	    	color:"#00008B",
     	},
 	    geo: {
 		    showocean: true,
 		    // oceancolor: 'rgba(74,128,245, 0.5)',
-			oceancolor: 'rgb(46, 236, 242)',
+			oceancolor: 'rgb(205, 250, 239)',
 		    showlakes: true,
 		    // lakecolor: 'rgba(74,128,245, 0.5)',
 		    // showland: true,
-		    landcolor: 'rgb(115, 73, 10)',
+		    landcolor: 'rgb(248, 250, 205)',
 		    mapframe: false,
     
 	    projection: {
