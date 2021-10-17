@@ -15,7 +15,7 @@ body{
 
 .banner {
 	/* background-image: url('banner.png'); */
-  background-color:beige ;
+  background-color:rgba(217, 230, 242,.5) ;
 	min-height: 600px;
 	margin-top: 20px;
 }
