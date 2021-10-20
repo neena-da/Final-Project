@@ -88,27 +88,6 @@ function drawScatter(data){
 		var xLabelsGroup = chartGroup.append('g')
 			.attr('transform', `translate(${width / 2}, ${height + 20})`);
 
-		// var economyLabel = xLabelsGroup.append('text')
-		//     .attr('x', 0)
-		//     .attr('y', 20)
-		//     .attr('value', 'Economy_GDPperCapita')
-		//     .classed('aText active', true)
-		//     .text('Economy (GDP per Capita)');
-
-		// var familyLabel = xLabelsGroup.append('text')
-		//     .attr('x', 0)
-		//     .attr('y', 40)
-		//     .attr('value', 'Family')
-		//     .classed('aText inactive', true)
-		//     .text('Family');
-
-	    // var healthLabel = xLabelsGroup.append('text')
-		//     .attr('x', 0)
-		//     .attr('y', 60)
-		//     .attr('value', 'Health_LifeExpectancy')
-		//     .classed('aText inactive', true)
-		//     .text('Health (Life Expectancy)');
-
 	    var happinessScoreLabel = xLabelsGroup.append('text')
 		    .attr('x', 0)
 		    .attr('y', 20)
@@ -135,12 +114,6 @@ function drawScatter(data){
 		    .attr('value', 'Generosity')
 		    .classed('aText inactive', true)
 		    .text('Generosity');
-
-		// var happinessScoreLabely = yLabelsGroup.append('text')
-		// 	.attr("transform", `translate(-100,${height / 2})rotate(-90)`)
-		//     .attr('value', 'HappinessScore')
-		//     .classed('aText inactive', true)
-		//     .text('Happiness Score');
 		
 		var economyLabel = yLabelsGroup.append('text')
 			.attr("transform", `translate(-100,${height / 2})rotate(-90)`)
@@ -200,65 +173,6 @@ function drawScatter(data){
 
 		        	countryCircles = updateToolTip(chosenYAxis,chosenXAxis,countryCircles,countryText),
 					countryText = updateToolTip(chosenYAxis,chosenXAxis,countryCircles,countryText);
-
-			//         if (chosenXAxis === 'Economy_GDPperCapita') {
-			// 		    economyLabel
-			// 	            .classed('active', true)
-			// 	            .classed('inactive', false);
-			// 	        familyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			//             healthLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			// 	        happinessScoreLabel
-			// 	        	.classed('active', false)
-			// 	        	.classed('inactive',true);
-			//         }
-			//         else if (chosenXAxis === 'Family'){
-			//         	economyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			// 	        familyLabel
-			// 	            .classed('active', true)
-			// 	            .classed('inactive', false);
-			//             healthLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			//             happinessScoreLabel
-			// 	        	.classed('active', false)
-			// 	        	.classed('inactive',true);
-			//         }
-			//         else if (chosenXAxis === 'Health_LifeExpectancy'){
-			//         	economyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			// 	        familyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			//             healthLabel
-			// 	            .classed('active', true)
-			// 	            .classed('inactive', false);
-			//             happinessScoreLabel
-			// 	        	.classed('active', false)
-			// 	        	.classed('inactive',true);
-			//         }
-			//         else {
-			//         	economyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			// 	        familyLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			//             healthLabel
-			// 	            .classed('active', false)
-			// 	            .classed('inactive', true);
-			//             happinessScoreLabel
-			// 	        	.classed('active', true)
-			// 	        	.classed('inactive',false);
-			//         }
-			//     }
-		    // });
 
 			if (chosenXAxis === 'HappinessScore') {
 				happinessScoreLabel

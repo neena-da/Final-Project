@@ -8,11 +8,6 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 from flask import Flask, jsonify, render_template
 
-# Neena added code
-# from flask_pymongo import pymongo
-# from bson.json_util import dumps
-# from flask_cors import CORS, cross_origin
-
 app = Flask(__name__)
 
 # #############################################
@@ -33,15 +28,6 @@ Happiness_2016 = Base.classes.happiness_2016
 Happiness_2017 = Base.classes.happiness_2017
 Countries = Base.classes.countries
 
-# Neena Added
-# client = pymongo.MongoClient("mongodb://localhost:27017")
-# database = client['WHR_Database_Temp']
-
-# Happiness_2015 = database.get_collection("whr_2015_table")
-# Happiness_2016 = database.get_collection("whr_2016_table")
-# Happiness_2017 = database.get_collection("whr_2017_table")
-# Countries = database.get_collection("country_table")
-
 @app.route("/")
 def index():
 	return render_template("index.html")
@@ -54,12 +40,6 @@ def years():
 def countries():
 	countries_sel = [Countries.country,Countries.code]
 	countries_results = db.session.query(*countries_sel).all()
-	# countries_results = Countries.find({}, {'_id':0})
-	# print(countries_results)
-	# countries_list = list(countries_results)
-	# whr_json_data = dumps(countries_list, indent = 2) 
-	# print(whr_json_data)
-	# return whr_json_data
 
 	countries_name = {}
 	# countries_list = []
